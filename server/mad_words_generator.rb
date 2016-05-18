@@ -74,4 +74,13 @@ class MadWordsGenerator
 
     res_arr.join
   end
+
+  def generaten n
+    res = []
+    1.upto(n) do
+      res << generate
+    end
+
+    res
+  end
 end
